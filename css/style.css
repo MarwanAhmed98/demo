@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    --bs-emphasis-color-rgb:white !important;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: #1E202B;
+}
+.NavBar{
+    background-color: #1E202B;
+}
+.bg-body-tertiary{
+    background: none !important;
+}
+.navbar{
+    --bs-navbar-color:var(--bs-emphasis-color-rgb) !important
+}
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+.navbar-nav .nav-link.active, 
+.navbar-nav .nav-link.show {
+    border-radius: 30px;
+    border: 2px solid #009ad8; 
+    color: #009ad8;
+    padding: 5px 25px;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 5px;
+    transition: all ease 1s;
+}
+.nav-link:focus, .nav-link:hover{
+    border-radius: 30px;
+    border: 2px solid #009ad8; 
+    color: #009ad8;
+    padding: 5px 25px;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.navbar-brand {
+    color: white;
+}
+.navbar-brand:focus, .navbar-brand:hover{
+    color: white;
+}
+.LogoCon p{
+    font-size: 10px;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+    --bs-gutter-x: 6.5rem;
+}
+.MainCont{
+    background-color: #1E202B;
+    margin-bottom: 50px;
+    /* min-height: 100vh; */
+}
+.Main{
+    background-image: url(../images/banner.png);
+    background-position: center center;
+    background-size: cover;
+    min-height: 350px;
+    background-repeat: no-repeat;
+}
+.form-control{
+    width: 100%;
+    padding: 20px 50px 20px 20px !important;
+    background: #1e202b !important;
+    color: white !important;
+    border-radius: 30px !important;
+    border: none !important;
+    margin-bottom: 25px;
+}
+input::placeholder{
+    color: #6A7575 !important;
+}
+.form-control:focus{
+    box-shadow: none !important;
+}
+#SubmitBtn{
+    position: absolute;
+    top: 55px;
+    right: 8px;
+    bottom: 35px;
+    border-radius: 30px;
+    border: none;
+    background-color: #009ad8;
+    padding: 5px 40px;
+    color: white;
+}
+#SubmitBtn button{
+    border-radius: 30px;
+    border: 2px solid #009ad8; 
+    color: #009ad8;
+    padding: 5px 25px;
+}
+.ConColor{
+    color: #bfc1c8;
+}
+.ConBackColor{
+    background-color: #2D303D;
+}
+.SecondCon{
+    background-color: #323544;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+.DarkBacColor{
+    background-color: #262936;
+}
+.HeadDarkBackColor{
+    background-color: #222530;
+}
+.Degree{
+    font-size: 90px;
+}
+.CustomStyle{
+    color: #009ad8;
+    padding-bottom: 20px;
+}
+.Footer{
+    background-color: #262936;
+}
+.Subscribtion .form-control{
+    width: 100%;
+    padding: 20px 50px 20px 20px !important;
+    background: #1e202b !important;
+    color: white !important;
+    border-radius: 30px !important;
+    border: none !important;
+    margin-bottom: 25px;
+}
+input::placeholder{
+    color: #a0a3a3 !important;
+}
+.form-control:focus{
+    box-shadow: none !important;
+}
+#SubscribeBtn{
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    bottom: 11px;
+    border-radius: 30px;
+    border: none;
+    background-color: #009ad8;
+    padding: 5px 40px;
+    color: white;
+}
+.Icon{
+    border-radius: 30px;
+    background-color: #1e202b;
+    color: #009ad8;
+    width: 45px;
+    padding: 15px 10px;
+    transition: all ease 0.5s;
+}
+.Icon:hover{
+    color: white;
+    background-color: #009ad8;
+}

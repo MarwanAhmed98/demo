@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- My style -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./images/thermometer_13882839.png">
+    <title>Weather</title>
+</head>
+
+<body>
+    <!-- NavBar -->
+    <div class="NavBar">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary py-5">
+                    <div class="container-fluid">
+                        <div class="Logo d-flex">
+                            <div class="LogoImg pt-3">
+                                <img src="./images/logo@2x.png" alt="" width="64" height="38">
+                            </div>
+                            <div class="LogoCon pt-2 ps-3">
+                                <a class="navbar-brand" href="#">Weather</a>
+                                <p class="text-white">tagline goes here</p>
+                            </div>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa-solid fa-sliders" style="color: white"></i>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item me-3">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item me-3 ">
+                                    <a class="nav-link" href="#">News</a>
+                                </li>
+                                <li class="nav-item me-3">
+                                    <a class="nav-link" href="#">Live Cameras</a>
+                                </li>
+                                <li class="nav-item me-3">
+                                    <a class="nav-link" href="#">Photos</a>
+                                </li>
+                                <li class="nav-item me-3">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Main Content -->
+    <div class="MainCont">
+        <div class="Main">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="FindYourLocation position-relative mb-5">
+                        <input class="form-control mt-5  " type="text" name="" id="LocationInput"
+                            placeholder="Find Your Location">
+                        <input class="" type="button" onclick="getWeather(LocationInput.value)" value="Find"
+                            id="SubmitBtn">
+                    </div>
+                    <!-- First Card -->
+                    <div class="col-xl-4">
+                        <div class="First">
+                            <div class="FirstCon ConBackColor d-flex justify-content-between py-2">
+                                <div class="Day ConColor ps-2">Friday</div>
+                                <div class="date ConColor pe-2">6 December</div>
+                            </div>
+                            <div class="SecondCon">
+                                <div class="Cname ConColor">Cairo</div>
+                                <div class="Degree text-white fw-bold">22.4°C</div>
+                                <div class="SecImg">
+                                    <img class="Weather-Icon" src="images/122.png" alt="">
+                                </div>
+                                <div class="Custom CustomStyle">Partly cloudy</div>
+                                <div class="LastDiv">
+                                    <span class="pe-4 ConColor">
+                                        <img class="pe-2" src="./images/icon-umberella.png" alt="">20%
+                                    </span>
+                                    <span class="pe-4 ConColor">
+                                        <img class="pe-2" src="./images/icon-wind.png" alt="">18km/h
+                                    </span>
+                                    <span class="ConColor">
+                                        <img class="pe-2" src="./images/icon-compass.png" alt="">East
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second Card -->
+                    <div class="col-xl-4">
+                        <div class="First text-center">
+                            <div class="FirstCon ConBackColor d-flex justify-content-center py-2 HeadDarkBackColor">
+                                <div class="Day2 ConColor">Saturday</div>
+                            </div>
+                            <div class="SecondCon DarkBacColor pb-5">
+                                <div class="SecImg py-4"><img class="Weather-Icon2" src="images/122.png" alt=""></div>
+                                <div class="Degree2 pb-2 text-white fw-bold">22.4°C</div>
+                                <div class="Degree3 ConColor pb-4">16.1°C</div>
+                                <div class="Custom2 CustomStyle pb-5">Overcast</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Third Card -->
+                    <div class="col-xl-4">
+                        <div class="First text-center">
+                            <div class="FirstCon ConBackColor d-flex justify-content-center py-2">
+                                <div class="Day3 ConColor">Sunday</div>
+                            </div>
+                            <div class="SecondCon pb-5">
+                                <div class="SecImg py-4"><img class="Weather-Icon3" src="./images/113.png" alt=""></div>
+                                <div class="Degree4 pb-2 text-white fw-bold">23.7°C</div>
+                                <div class="Degree5 ConColor pb-4">15.2°C</div>
+                                <div class="Custom3 CustomStyle
+                                 pb-5">Sunny</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <br> <br> <br>
+    <div class="Footer py-5">
+        <div class="container ">
+            <div class="row">
+                <div class="col-xl-8">
+                    <div class="Subscribtion  position-relative">
+                        <input class="form-control mt-5  " type="text" name="" id="LocationInput"
+                            placeholder="Enter Your Email to Subscribe">
+                        <input class="" type="button" value="Subscribe" id="SubscribeBtn">
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="SocialIcons mt-5 ms-5 mb-3 text-center d-flex ">
+                        <div class="Icon d-flex align-items-center justify-content-center me-3">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="Icon d-flex align-items-center justify-content-center me-3">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="Icon d-flex align-items-center justify-content-center me-3">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </div>
+                        <div class="Icon d-flex align-items-center justify-content-center me-3">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="ConColor">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
